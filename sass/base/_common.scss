@@ -1,0 +1,16 @@
+body {
+    background-color: $clr-bg-primary;
+    color: $clr-txt-primary;
+    font-family: $ff-primary;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (min-width: 480px) {
+        max-width: 450px;        
+    }
+}
