@@ -14,7 +14,13 @@ body {
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    @media screen and (min-width: 480px) {
-        max-width: 450px;        
+    @include mobile {
+        max-width: 480px;        
+    }
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
     }
 }
