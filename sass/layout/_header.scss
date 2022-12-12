@@ -45,7 +45,6 @@
 .menu-button__icon {
     transition: fill $transition;
     
-    .menu-button:hover &,
     .menu-button:focus & {
         fill: $clr-accent;
     }
