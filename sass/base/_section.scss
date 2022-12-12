@@ -6,11 +6,14 @@
     }
 
     &__title {
-        // margin-bottom: 50px;
-        // font-size: 36px;
-        // line-height: calc(42 / 36);
-        // letter-spacing: 0.03em;
-        // text-align: center;
-        // color: $clr-txt-secondary;
+
+        @include desktop{
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: calc(42 / 36);
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: $clr-txt-secondary;
+        }
     }
 }

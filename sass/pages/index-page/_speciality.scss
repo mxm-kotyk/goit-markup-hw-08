@@ -1,0 +1,35 @@
+.speciality {
+    @media screen and (max-width: 1199px) {
+            display: none;
+    }
+    padding-top: 0;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        width: calc((100% - 60px) / 3);
+    }
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        width: 370px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        background-color: $clr-speciality-overlay;
+        color: $clr-bg-primary;
+    }
+}
