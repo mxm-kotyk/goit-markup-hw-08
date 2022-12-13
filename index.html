@@ -160,24 +160,34 @@
         <ul class="speciality__list list">
           <li class="speciality__item">
             <div class="speciality__thumb">
-              <img src="./images/coder.jpg" alt="Програміст, який працює за робочим столом в офісі" width="370"
-                height="294" class="speciality__img img" />
+              <picture>
+                <source srcset="./images/coder.jpg 1x, ./images/coder-x2.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/coder.jpg" alt="Програміст, який працює за робочим столом в офісі" width="370"
+                  class="speciality__img img" />
+              </picture>
               <p class="speciality__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="speciality__item">
             <div class="speciality__thumb">
-              <img src="./images/ui-designer.jpg"
-                alt="Юай-дизайнер з телефоном в руці переглядає макети веб-інтерфейсу на ноутбуці" width="370"
-                height="294" class="speciality__img img" />
+              <picture>
+                <source srcset="./images/ui-designer.jpg 1x, ./images/ui-designer-x2.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./images/ui-designer.jpg"
+                  alt="Юай-дизайнер з телефоном в руці переглядає макети веб-інтерфейсу на ноутбуці" width="370"
+                  class="speciality__img img" />
+              </picture>
               <p class="speciality__text">Мобільні додатки</p>
             </div>
           </li>
           <li class="speciality__item">
             <div class="speciality__thumb">
-              <img src="./images/artist.jpg"
-                alt="Творчий художник веб-дизайну тримає графічний планшет із палітрою кольорів" width="370"
-                height="294" class="speciality__img img" />
+              <picture>
+                <source srcset="./images/artist.jpg 1x, ./images/artist-x2.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/artist.jpg"
+                  alt="Творчий художник веб-дизайну тримає графічний планшет із палітрою кольорів" width="370"
+                  class="speciality__img img" />
+              </picture>
               <p class="speciality__text">Дизайнерські рішення</p>
             </div>
           </li>
@@ -190,9 +200,14 @@
         <h2 class="team__title section__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__card">
-            <img src="./images/igor.jpg"
-              alt="Молодий білий чоловік з темним коротким волоссям і короткою бородою в окулярах та темно-бордовій сорочці"
-              width="270" height="260" class="team__img img" />
+            <picture>
+              <source srcset="./images/igor.jpg 1x, ./images/igor-x2.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/igor-tab.jpg 1x, ./images/igor-tab-x2.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/igor-mob.jpg 1x, ./images/igor-mob-x2.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/igor.jpg"
+                alt="Молодий білий чоловік з темним коротким волоссям і короткою бородою в окулярах та темно-бордовій сорочці"
+                width="450" class="team__img img" />
+            </picture>
             <div class="team__footer">
               <h3 class="team__member">Ігор Дем'яненко</h3>
               <p class="team__position">Product Designer</p>
@@ -233,8 +248,14 @@
             </div>
           </li>
           <li class="team__card">
-            <img src="./images/olga.jpg" alt="Молода біла жінка з довгим білявим волоссям в окулярах та чорному піджаку"
-              width="270" height="260" class="team__img img" />
+            <picture>
+              <source srcset="./images/olga.jpg 1x, ./images/olga-x2.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/olga-tab.jpg 1x, ./images/olga-tab-x2.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/olga-mob.jpg 1x, ./images/olga-mob-x2.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/olga.jpg"
+                alt="Молода біла жінка з довгим білявим волоссям в окулярах та чорному піджаку" width="450"
+                class="team__img img" />
+            </picture>
             <div class="team__footer">
               <h3 class="team__member">Ольга Рєпіна</h3>
               <p class="team__position">Frontend Developer</p>
@@ -275,9 +296,14 @@
             </div>
           </li>
           <li class="team__card">
-            <img src="./images/mykola.jpg"
-              alt="Молодий білий чоловік з русявим волоссям та короткою бородою в блакитній сорочці" width="270"
-              width="270" height="260" class="team__img img" />
+            <picture>
+              <source srcset="./images/mykola.jpg 1x, ./images/mykola-x2.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mykola-tab.jpg 1x, ./images/mykola-tab-x2.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/mykola-mob.jpg 1x, ./images/mykola-mob-x2.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/mykola.jpg"
+                alt="Молодий білий чоловік з русявим волоссям та короткою бородою в блакитній сорочці" width="450"
+                class="team__img img" />
+            </picture>
             <div class="team__footer">
               <h3 class="team__member">Микола Тарасов</h3>
               <p class="team__position">Marketing</p>
@@ -318,9 +344,14 @@
             </div>
           </li>
           <li class="team__card">
-            <img src="./images/mykhailo.jpg"
-              alt="Молодий білий чоловік з темним коротким волоссям і короткою бородою в окулярах та чорній футболці"
-              width="270" height="260" class="team__img img" />
+            <picture>
+              <source srcset="./images/mykhailo.jpg 1x, ./images/mykhailo-x2.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mykhailo-tab.jpg 1x, ./images/mykhailo-tab-x2.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/mykhailo-mob.jpg 1x, ./images/mykhailo-mob-x2.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/mykhailo.jpg"
+                alt="Молодий білий чоловік з темним коротким волоссям і короткою бородою в окулярах та чорній футболці"
+                width="450" class="team__img img" />
+            </picture>
             <div class="team__footer">
               <h3 class="team__member">Михайло Єрмаков</h3>
               <p class="team__position">UI Designer</p>
