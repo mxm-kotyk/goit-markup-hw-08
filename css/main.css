@@ -1697,7 +1697,6 @@ body {
   line-height: 1.625;
   letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: inherit;
   background-color: #f5f4fa;
   color: #2f303a;
   border: 0 solid transparent;
