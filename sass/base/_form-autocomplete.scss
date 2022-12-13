@@ -1,0 +1,11 @@
+// Стилізація фону інпуту під час автозаповнення
+
+.subscription__input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px $clr-bg-secondary-alpha;
+    -webkit-text-fill-color: $clr-bg-primary;
+}
+
+.modal__input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px $clr-bg-primary;
+    -webkit-text-fill-color: $clr-header-logo;
+}

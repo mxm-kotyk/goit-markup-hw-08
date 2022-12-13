@@ -11,8 +11,15 @@
     cursor: pointer;
     transition: background-color $transition;
 
-    &:hover,
-    &:focus {
-        background-color: $clr-hero-button-active;
+    @media screen and (max-width: 1199px) {
+        &:active {
+            background-color: $clr-hero-button-active;
+        }
+    }
+    @include desktop {
+        &:hover,
+        &:focus {
+            background-color: $clr-hero-button-active;
+        }
     }
 }

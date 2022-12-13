@@ -1,286 +1,294 @@
 .header {
-    border-bottom: 1px solid $clr-header-border;
+	border-bottom: 1px solid $clr-header-border;
 
-    &__logo {
-        display: inline-block;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        color: $clr-header-logo;
+	&__logo {
+		display: inline-block;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		color: $clr-header-logo;
 
-        @include desktop {
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-    }
-    
-    &__container {
-        position: relative;
+		@include desktop {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
 
-        @include tablet {
-            display: flex;
-        }
-    }
+	&__container {
+		position: relative;
+
+		@include tablet {
+			display: flex;
+		}
+	}
 }
 
 .mobile-header {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .menu-button {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    z-index: 2;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	z-index: 2;
 
-    @include tablet {
-        display: none;
-    }
+	@include tablet {
+		display: none;
+	}
 }
 
 .menu-button__icon {
-    transition: fill $transition;
-    
-    .menu-button:focus & {
-        fill: $clr-accent;
-    }
+	transition: fill $transition;
+
+	.menu-button:active & {
+		fill: $clr-accent;
+	}
 }
 
 .icon__cross {
-    display: none;
+	display: none;
 
-    .menu-button.is-open & {
-        display: block;
-    }
+	.menu-button.is-open & {
+		display: block;
+	}
 }
 
 .menu-button.is-open .icon__menu {
-    display: none;
+	display: none;
 }
 
 .header__menu {
-    @media screen and (max-width: 767px) {
-        display: none;
+	@media screen and (max-width: 767px) {
+		display: none;
 
-        &.is-open {
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100vw;
-            height: 100vh;
-            height: 100dvh;
-            padding: 48px 40px;
-            overflow: auto;
-            background-color: $clr-bg-primary;
-            z-index: 1;
-        }
-    }
-    @include tablet {
-        display: flex;
-        align-items: center;
-        margin-left: 88px;
-    }
-    @include desktop {
-        margin-left: 93px;
-    }
+		&.is-open {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 100vw;
+			height: 100vh;
+			height: 100dvh;
+			padding: 48px 40px;
+			overflow: auto;
+			background-color: $clr-bg-primary;
+			z-index: 1;
+		}
+	}
+	@include tablet {
+		display: flex;
+		align-items: center;
+		margin-left: 88px;
+	}
+	@include desktop {
+		margin-left: 93px;
+	}
 }
 
 .header-socials {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-    &__item {
+	&__item {
+		&:not(:first-child) {
+			padding-left: 10px;
+		}
 
-        &:not(:first-child) {
-        padding-left: 10px;
-        }
+		&:not(:last-child) {
+			padding-right: 10px;
+			border-right: 1px solid $clr-modal-input-border;
+		}
+	}
 
-        &:not(:last-child) {
-            padding-right: 10px;
-            border-right: 1px solid $clr-modal-input-border;
-        }
-    }
+	&__link {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: calc(22 / 16);
+		letter-spacing: 0.02em;
+		color: $clr-accent;
 
-    &__link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(22 / 16);
-        letter-spacing: 0.02em;
-        color: $clr-accent;
+		@include mobile {
+			font-size: 18px;
+			line-height: calc(22 / 18);
+		}
+	}
+	@include mobile {
+		flex-wrap: nowrap;
+	}
 
-        @include mobile {
-            font-size: 18px;
-            line-height: calc(22 / 18);
-        }
-    }
-    @include mobile {
-        flex-wrap: nowrap;
-    }
-
-    @include tablet {
-        display: none;
-    }
+	@include tablet {
+		display: none;
+	}
 }
 
 .nav__list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 
-    @include tablet {
-        flex-direction: row;
-        gap: 50px;
-        flex-basis: calc((100% - 100px) / 3);
-    }
+	@include tablet {
+		flex-direction: row;
+		gap: 50px;
+		flex-basis: calc((100% - 100px) / 3);
+	}
 }
 
 .nav {
-    @include tablet {
-        align-items: center;
-    }
+	@include tablet {
+		align-items: center;
+	}
 }
 
 .nav__link {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: calc(45 / 36);
-    letter-spacing: 0.02em;
-    color: $clr-txt-secondary;
-    transition: color $transition;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: calc(45 / 36);
+	letter-spacing: 0.02em;
+	color: $clr-txt-secondary;
+	transition: color $transition;
+	&:active {
+		color: $clr-accent;
+	}
 
-    @include mobile {
-        font-size: 40px;
-        line-height: calc(47 / 40);
-    }
-
-    @include tablet {
-        display: inline-block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-    }
-
-    &:hover,
-    &:focus {
-        color: $clr-accent;
-    }
+	@include mobile {
+		font-size: 40px;
+		line-height: calc(47 / 40);
+	}
+	@include tablet {
+		display: inline-block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-size: 14px;
+		line-height: calc(16 / 14);
+	}
+	@include desktop {
+		&:hover,
+		&:focus {
+			color: $clr-accent;
+		}
+	}
 }
 
 .header-contacts {
-    display: flex;
+	display: flex;
 
-    @media screen and (max-width: 767px) {
-        flex-direction: column-reverse;
-        gap: 32px;
-        margin-top: auto;
-        margin-bottom: 64px;
-    }
-    @include tablet {
-        margin-left: 96px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    @include desktop {
-        margin-left: 305px;
-        flex-direction: row;
-        gap: 40px;
-    }
+	@media screen and (max-width: 767px) {
+		flex-direction: column-reverse;
+		gap: 32px;
+		margin-top: auto;
+		margin-bottom: 64px;
+	}
+	@include tablet {
+		margin-left: 96px;
+		flex-direction: column;
+		gap: 10px;
+	}
+	@include desktop {
+		margin-left: 305px;
+		flex-direction: row;
+		gap: 40px;
+	}
 
-    &__icon {
-        display: none;
-    
-        @include tablet {
-            display: block;
-            margin-right: 8px;
-            fill: currentColor;
-            transition: fill $transition;
+	&__icon {
+		display: none;
 
-            .header-contacts__link:hover &,
-            .header-contacts__link:focus & {
-                fill: currentColor;
-            }
-        }
-        @include desktop {
-            margin-right: 10px;
-        }
-    }
+		@include tablet {
+			display: block;
+			margin-right: 8px;
+			fill: currentColor;
+			transition: fill $transition;
+			.header-contacts__link:active & {
+				fill: currentColor;
+			}
+		}
+		@include desktop {
+			margin-right: 10px;
+			.header-contacts__link:hover &,
+			.header-contacts__link:focus & {
+				fill: currentColor;
+			}
+		}
+	}
 }
 
 .header-tel {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: calc(40 / 26);
-    letter-spacing: 0.02em;
-    color: $clr-accent;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: calc(40 / 26);
+	letter-spacing: 0.02em;
+	color: $clr-accent;
 
-    @include mobile {
-        font-size: 34px;
-        line-height: calc(40 / 34);
-    }
+	@include mobile {
+		font-size: 34px;
+		line-height: calc(40 / 34);
+	}
 }
 
 .header-email {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.02em;
-    color: $clr-txt-primary;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: calc(28 / 24);
+	letter-spacing: 0.02em;
+	color: $clr-txt-primary;
 }
 
 .header-contacts__link {
-    @include tablet {
-        font-size: 12px;
-        line-height: calc(14 / 12);
-        letter-spacing: 0.02em;
-    }
-    @include desktop {
-        display: block;
-        padding: 32px 0;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-    }
-    transition: color $transition;
+	@include tablet {
+		font-size: 12px;
+		line-height: calc(14 / 12);
+		letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-        color: $clr-accent;
-    }
+		&:active {
+			color: $clr-accent;
+		}
+	}
+	@include desktop {
+		display: block;
+		padding: 32px 0;
+		font-size: 14px;
+		line-height: calc(16 / 14);
+
+		&:hover,
+		&:focus {
+			color: $clr-accent;
+		}
+	}
+	transition: color $transition;
 }
 
 .header-contacts__link {
-    @include tablet {
-        display: flex;
-        align-items: center;
-        color: inherit;
-    }
+	@include tablet {
+		display: flex;
+		align-items: center;
+		color: inherit;
+	}
 }
 
 .logo--alt {
-    color: $clr-accent;
+	color: $clr-accent;
 }
 
 .nav__link--current {
-    @include tablet {
-        position: relative;
-        color: $clr-accent;
-    
-        &::after {
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-            content: "";
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: $clr-accent;
-        }
-    }
+	@include tablet {
+		position: relative;
+		color: $clr-accent;
+
+		&::after {
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			content: "";
+			width: 100%;
+			height: 4px;
+			border-radius: 2px;
+			background-color: $clr-accent;
+		}
+	}
 }

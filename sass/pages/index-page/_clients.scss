@@ -1,56 +1,57 @@
 .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
 }
 
 .clients__item {
-    width: 210px;
-    height: 92px;
+	width: 210px;
+	height: 92px;
 
-    @include tablet {
-        flex-basis: 226px;
-    }
-    @include desktop {
-        flex-basis: 170px;
-    }
+	@include tablet {
+		flex-basis: 226px;
+	}
+	@include desktop {
+		flex-basis: 170px;
+	}
 }
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: $clr-icons;
-    border: 1px solid $clr-icons;
-    border-radius: 4px;
-    transition: border-color $transition;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: $clr-icons;
+	border: 1px solid $clr-icons;
+	border-radius: 4px;
+	transition: border-color $transition;
 
-    &:focus {
-        color: $clr-accent;
-        border-color: $clr-accent;
-    }
-    @include desktop {
-        &:hover {
-            color: $clr-accent;
-            border-color: $clr-accent;
-        }
-    }
+	&:active {
+		color: $clr-accent;
+		border-color: $clr-accent;
+	}
+	@include desktop {
+		&:hover,
+		&:focus {
+			color: $clr-accent;
+			border-color: $clr-accent;
+		}
+	}
 }
 
 .clients__icon {
-    fill: currentColor;
-    transition: color $transition;
+	fill: currentColor;
+	transition: color $transition;
 
-    .clients__link:focus & {
-        fill: currentColor;
-    }
-    @include desktop {
-        .clients__link:hover & {
-            fill: currentColor;
-        }
-    }
-    
+	.clients__link:active & {
+		fill: currentColor;
+	}
+	@include desktop {
+		.clients__link:hover &,
+		.clients__link:focus & {
+			fill: currentColor;
+		}
+	}
 }
