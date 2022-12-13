@@ -1,26 +1,26 @@
-// Primary Background #FFFFFF 
-// Secondary Background #2F303A 
-// Team Section Background #F5F4FA 
-// Accent #2196F3 
-// Primary Text #757575 
-// Secondary Text #212121 
+// Primary Background #FFFFFF
+// Secondary Background #2F303A
+// Team Section Background #F5F4FA
+// Accent #2196F3
+// Primary Text #757575
+// Secondary Text #212121
 // Footer Contacts rgba(255, 255, 255, 0.6);
-// Filter Button #F5F4FA 
-// Hero Button Active #188CE8 
-// Header Border #ECECEC 
-// Portfolio Card Border #EEEEEE 
+// Filter Button #F5F4FA
+// Hero Button Active #188CE8
+// Header Border #ECECEC
+// Portfolio Card Border #EEEEEE
 // Portfolio Card Overlay Background rgba(33, 150, 243, 0.9);
-// Icons #AFB1B8 
+// Icons #AFB1B8
 // Footer Social Links Background rgba(255, 255, 255, 0.1);
-// Footer Input Border Color rgba(255, 255, 255, 0.3) 
-// Submit Button Shadow 0px 4px 4px rgba(0, 0, 0, 0.15) 
+// Footer Input Border Color rgba(255, 255, 255, 0.3)
+// Submit Button Shadow 0px 4px 4px rgba(0, 0, 0, 0.15)
 // Hero Background Overlay rgba(47, 48, 58, 0.4);
 // Speciality Overlay rgba(47, 48, 58, 0.8);
-// Modal Close Window Button Border rgba(0, 0, 0, 0.1) 
+// Modal Close Window Button Border rgba(0, 0, 0, 0.1)
 // Modal window Backdrop rgba(0, 0, 0, 0.2);
-// Modal Input Border Color rgba(33, 33, 33, 0.2) 
-// Modal Comment Placeholder Color rgba(117, 117, 117, 0.5) 
-// Transition Duration & Timing-function 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+// Modal Input Border Color rgba(33, 33, 33, 0.2)
+// Modal Comment Placeholder Color rgba(117, 117, 117, 0.5)
+// Transition Duration & Timing-function 250ms cubic-bezier(0.4, 0, 0.2, 1)
 // Team Card Shadow 0px 1px 3px rgba(0, 0, 0, 0.12),
 // 0px 1px 1px rgba(0, 0, 0, 0.14),
 // 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,30 +40,23 @@ $clr-txt-footer-contacts: rgba(255, 255, 255, 0.6);
 $clr-accent: #2196f3;
 $clr-header-logo: #000000;
 $clr-hero-button-active: #188ce8;
-$clr-header-border: #ECECEC;
-$clr-portfolio-card-border: #EEEEEE;
+$clr-header-border: #ececec;
+$clr-portfolio-card-border: #eeeeee;
 $clr-portfolio-overlay-background: rgba(33, 150, 243, 0.9);
-$clr-icons: #AFB1B8;
+$clr-icons: #afb1b8;
 $clr-footer-social: rgba(255, 255, 255, 0.1);
 $clr-footer-input-border: rgba(255, 255, 255, 0.3);
-$clr-hero-overlay: rgba(47, 48, 58, 0.4);
+$clr-hero-overlay: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 $clr-speciality-overlay: rgba(47, 48, 58, 0.8);
 $clr-backdrop: rgba(0, 0, 0, 0.2);
 $clr-modal-btn-border: rgba(0, 0, 0, 0.1);
 $clr-modal-input-border: rgba(33, 33, 33, 0.2);
 $clr-modal-comment-placeholder: rgba(117, 117, 117, 0.5);
 $shdw-submit-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
-$shdw-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-0px 1px 1px rgba(0, 0, 0, 0.14),
-0px 2px 1px rgba(0, 0, 0, 0.2);
-$shdw-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-0px 1px 2px rgba(0, 0, 0, 0.08),
-0px 2px 2px rgba(0, 0, 0, 0.12);
-$shdw-portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16);
+$shdw-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$shdw-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+$shdw-portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+	1px 4px 6px rgba(0, 0, 0, 0.16);
 $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-$ff-primary: Roboto,
-sans-serif;
-$ff-secondary: Raleway,
-sans-serif;
+$ff-primary: Roboto, sans-serif;
+$ff-secondary: Raleway, sans-serif;
